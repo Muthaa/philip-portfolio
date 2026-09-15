@@ -214,7 +214,7 @@ export default function Home() {
           <div className="flex flex-col justify-between gap-6 md:flex-row md:items-end">
             <div>
               <p className="text-xs uppercase tracking-[0.22em] text-white/35">
-                01 / Engineering work
+                Engineering work
               </p>
 
               <h2 className="mt-4 text-3xl font-semibold tracking-tight md:text-5xl">
@@ -269,12 +269,12 @@ export default function Home() {
                       ))}
                     </div>
 
-                    <button
+                    {/* <button
                       className="mt-8 text-sm font-medium text-white/70 transition hover:text-white"
                       type="button"
                     >
                       Case study coming soon →
-                    </button>
+                    </button> */}
                   </div>
                 </div>
               </article>
@@ -289,7 +289,7 @@ export default function Home() {
           <div className="grid gap-12 md:grid-cols-[1fr_2fr]">
             <div>
               <p className="text-xs uppercase tracking-[0.22em] text-white/35">
-                02 / Engineering approach
+                Engineering approach
               </p>
             </div>
 
@@ -336,7 +336,7 @@ export default function Home() {
           <div className="flex flex-col justify-between gap-6 md:flex-row md:items-end">
             <div>
               <p className="text-xs uppercase tracking-[0.22em] text-white/35">
-                03 / Selected client work
+                Selected client work
               </p>
 
               <h2 className="mt-4 text-3xl font-semibold tracking-tight md:text-5xl">
@@ -375,7 +375,7 @@ export default function Home() {
 
       {/* EXPERIENCE */}
       <section id="experience" className="border-t border-white/10 py-24 md:py-32">
-        <div className="grid gap-12 md:grid-cols-[0.8fr_1.2fr]">
+        <div className="mx-auto max-w-6xl grid gap-12 md:grid-cols-[0.8fr_1.2fr]">
           <div>
             <p className="text-xs font-medium uppercase tracking-[0.2em] text-white/40">
               Experience & Background
@@ -504,7 +504,7 @@ export default function Home() {
         <div className="mx-auto max-w-6xl px-6 py-24 md:py-32">
           <div className="grid gap-12 md:grid-cols-[1fr_2fr]">
             <p className="text-xs uppercase tracking-[0.22em] text-white/35">
-              05 / About
+              About
             </p>
 
             <div>
@@ -560,7 +560,7 @@ export default function Home() {
       <section id="contact" className="border-t border-white/10">
         <div className="mx-auto max-w-6xl px-6 py-32 md:py-40">
           <p className="text-xs uppercase tracking-[0.22em] text-white/35">
-            06 / Contact
+            Contact
           </p>
 
           <h2 className="mt-6 max-w-4xl text-4xl font-semibold leading-tight tracking-tight md:text-6xl">
