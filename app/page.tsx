@@ -1,78 +1,154 @@
-const projects = [
+const engineeringProjects = [
   {
+    number: "01",
     title: "ExpTrail",
-    category: "Fintech / Mobile",
+    category: "FINTECH · MOBILE · DATA",
     description:
-      "A personal finance platform designed to turn M-PESA transaction messages into structured financial data.",
-    technologies: ["Flutter", "Dart", "SQLite", "Riverpod"],
+      "A personal finance platform built around the problem of turning M-PESA transaction messages into structured financial data that can be stored, analysed and acted on.",
+    stack: ["Flutter", "Dart", "Riverpod", "Drift"],
+    status: "In development",
   },
   {
-    title: "SimplePOS",
-    category: "Business Software",
+    number: "02",
+    title: "AsiriaIDP",
+    category: "IDENTITY · API · SECURITY",
     description:
-      "A point-of-sale system focused on inventory, transactions and day-to-day business operations.",
-    technologies: [".NET", "C#", "SQL Server"],
+      "An identity and authentication platform exploring the foundations of secure application access, authentication workflows and service integration.",
+    stack: ["APIs", "Authentication", "Security"],
+    status: "Building",
   },
   {
-    title: "Fleet Technology Platform",
-    category: "Web / Systems",
+    number: "03",
+    title: "AsiriaPOS",
+    category: "BUSINESS SYSTEMS · API",
     description:
-      "A modern web platform for a fleet technology business, combining service presentation, integrations and operational tooling.",
-    technologies: ["WordPress", "PHP", "SEO", "Analytics"],
+      "A point-of-sale platform designed around real business operations, including transactions, inventory, authentication and payment integrations.",
+    stack: ["C#", ".NET", "SQL Server", "APIs"],
+    status: "Project",
+  },
+];
+
+const clientProjects = [
+  {
+    title: "Elite Tech Base",
+    category: "E-COMMERCE",
+  },
+  {
+    title: "Discreet Fleet",
+    category: "FLEET TECHNOLOGY",
+  },
+  {
+    title: "Kira Tech & Tacticals",
+    category: "COMMERCE",
+  },
+  {
+    title: "Smart Ryuga",
+    category: "WEB PLATFORM",
+  },
+  {
+    title: "Chanf Hospital",
+    category: "HEALTHCARE",
+  },
+  {
+    title: "Moderno Global Placements",
+    category: "PROFESSIONAL SERVICES",
   },
 ];
 
 const capabilities = [
-  "Software Development",
-  "API Engineering",
-  "Database Design",
-  "Cloud & DevOps",
-  "Networking",
-  "Cybersecurity",
+  {
+    number: "01",
+    title: "Software",
+    description:
+      "Designing and building applications across web, mobile and backend environments.",
+  },
+  {
+    number: "02",
+    title: "APIs & Integrations",
+    description:
+      "Connecting applications, services and third-party platforms through reliable APIs and integrations.",
+  },
+  {
+    number: "03",
+    title: "Data & Persistence",
+    description:
+      "Working with relational databases, application state and data flows from ingestion to persistence.",
+  },
+  {
+    number: "04",
+    title: "Infrastructure",
+    description:
+      "Understanding the systems beneath applications — hosting, deployment, networking and operations.",
+  },
+  {
+    number: "05",
+    title: "Security",
+    description:
+      "Building with authentication, access control, API security and secure system design in mind.",
+  },
+  {
+    number: "06",
+    title: "Problem Solving",
+    description:
+      "Breaking complex technical problems into smaller systems that can actually be built and maintained.",
+  },
 ];
 
 export default function Home() {
   return (
     <main>
-      {/* Navigation */}
+      {/* NAVIGATION */}
       <header className="border-b border-white/10">
         <nav className="mx-auto flex max-w-6xl items-center justify-between px-6 py-5">
-          <a href="/" className="text-lg font-semibold tracking-tight">
+          <a
+            href="/"
+            className="text-sm font-semibold uppercase tracking-[0.12em]"
+          >
             Philip Kyalo
           </a>
 
-          <div className="hidden gap-8 text-sm text-white/60 md:flex">
+          <div className="hidden items-center gap-8 text-sm text-white/50 md:flex">
             <a href="#work" className="transition hover:text-white">
               Work
             </a>
-            <a href="#about" className="transition hover:text-white">
-              About
+
+            <a href="#approach" className="transition hover:text-white">
+              Approach
             </a>
+
             <a href="#experience" className="transition hover:text-white">
               Experience
             </a>
+
             <a href="#contact" className="transition hover:text-white">
               Contact
             </a>
           </div>
+
+          <a
+            href="#contact"
+            className="rounded-full border border-white/15 px-4 py-2 text-xs font-medium transition hover:border-white/30"
+          >
+            Let&apos;s talk
+          </a>
         </nav>
       </header>
 
-      {/* Hero */}
-      <section className="mx-auto max-w-6xl px-6 pb-32 pt-28 md:pt-40">
-        <div className="max-w-4xl">
-          <p className="mb-6 text-sm font-medium uppercase tracking-[0.2em] text-white/40">
-            Software & Systems Engineer
+      {/* HERO */}
+      <section className="mx-auto max-w-6xl px-6 pb-32 pt-28 md:pb-40 md:pt-40">
+        <div className="max-w-5xl">
+          <p className="mb-7 text-xs font-medium uppercase tracking-[0.25em] text-white/40">
+            Software · Systems · Security
           </p>
 
-          <h1 className="text-5xl font-semibold leading-[1.05] tracking-tight md:text-7xl">
-            I build software, APIs and systems that solve real problems.
+          <h1 className="max-w-4xl text-5xl font-semibold leading-[1.02] tracking-[-0.04em] md:text-7xl lg:text-8xl">
+            I build software and systems that hold up in the real world.
           </h1>
 
-          <p className="mt-8 max-w-2xl text-lg leading-8 text-white/60">
-            I work across software development, backend systems, APIs,
-            databases, infrastructure and security — turning ideas into
-            reliable technology.
+          <p className="mt-8 max-w-2xl text-lg leading-8 text-white/55 md:text-xl">
+            Software & systems engineer working across applications, APIs,
+            databases, infrastructure and security — turning complex technical
+            problems into reliable systems.
           </p>
 
           <div className="mt-10 flex flex-wrap gap-4">
@@ -80,7 +156,7 @@ export default function Home() {
               href="#work"
               className="rounded-full bg-white px-6 py-3 text-sm font-medium text-black transition hover:bg-white/90"
             >
-              View my work
+              View selected work
             </a>
 
             <a
@@ -92,52 +168,96 @@ export default function Home() {
           </div>
         </div>
 
-        <div className="mt-20 flex items-center gap-3 text-sm text-white/40">
-          <span className="h-2 w-2 rounded-full bg-emerald-400" />
-          Based in Nairobi, Kenya
+        <div className="mt-20 grid gap-6 border-t border-white/10 pt-6 text-xs uppercase tracking-[0.16em] text-white/35 md:grid-cols-3">
+          <div>
+            <span className="block text-white/20">Based in</span>
+            <span className="mt-2 block text-white/60">Nairobi, Kenya</span>
+          </div>
+
+          <div>
+            <span className="block text-white/20">Focus</span>
+            <span className="mt-2 block text-white/60">
+              Software · APIs · Systems
+            </span>
+          </div>
+
+          <div>
+            <span className="block text-white/20">Currently</span>
+            <span className="mt-2 block text-white/60">
+              Building & learning
+            </span>
+          </div>
         </div>
       </section>
 
-      {/* Work */}
+      {/* ENGINEERING WORK */}
       <section id="work" className="border-t border-white/10">
-        <div className="mx-auto max-w-6xl px-6 py-24">
-          <div className="mb-12">
-            <p className="text-sm uppercase tracking-[0.2em] text-white/40">
-              Selected work
-            </p>
+        <div className="mx-auto max-w-6xl px-6 py-24 md:py-32">
+          <div className="flex flex-col justify-between gap-6 md:flex-row md:items-end">
+            <div>
+              <p className="text-xs uppercase tracking-[0.22em] text-white/35">
+                01 / Engineering work
+              </p>
 
-            <h2 className="mt-4 text-3xl font-semibold tracking-tight md:text-4xl">
-              Things I&apos;ve built.
-            </h2>
+              <h2 className="mt-4 text-3xl font-semibold tracking-tight md:text-5xl">
+                Systems I&apos;ve been building.
+              </h2>
+            </div>
+
+            <p className="max-w-sm text-sm leading-6 text-white/45">
+              Selected projects that show how I approach software, data,
+              APIs and systems.
+            </p>
           </div>
 
-          <div className="grid gap-5 md:grid-cols-3">
-            {projects.map((project) => (
+          <div className="mt-16">
+            {engineeringProjects.map((project) => (
               <article
                 key={project.title}
-                className="group rounded-2xl border border-white/10 bg-white/[0.02] p-6 transition hover:-translate-y-1 hover:border-white/20"
+                className="group border-t border-white/10 py-10 md:py-12"
               >
-                <p className="text-xs uppercase tracking-wider text-white/40">
-                  {project.category}
-                </p>
+                <div className="grid gap-8 md:grid-cols-[80px_1fr_1.2fr] md:items-start">
+                  <span className="text-sm text-white/25">
+                    {project.number}
+                  </span>
 
-                <h3 className="mt-6 text-xl font-semibold">
-                  {project.title}
-                </h3>
+                  <div>
+                    <p className="text-xs uppercase tracking-[0.18em] text-white/35">
+                      {project.category}
+                    </p>
 
-                <p className="mt-4 text-sm leading-7 text-white/55">
-                  {project.description}
-                </p>
+                    <h3 className="mt-4 text-3xl font-semibold tracking-tight md:text-4xl">
+                      {project.title}
+                    </h3>
 
-                <div className="mt-8 flex flex-wrap gap-2">
-                  {project.technologies.map((technology) => (
-                    <span
-                      key={technology}
-                      className="rounded-full border border-white/10 px-3 py-1 text-xs text-white/50"
+                    <p className="mt-4 text-xs uppercase tracking-wider text-white/30">
+                      {project.status}
+                    </p>
+                  </div>
+
+                  <div>
+                    <p className="max-w-xl text-base leading-7 text-white/55">
+                      {project.description}
+                    </p>
+
+                    <div className="mt-7 flex flex-wrap gap-2">
+                      {project.stack.map((technology) => (
+                        <span
+                          key={technology}
+                          className="rounded-full border border-white/10 px-3 py-1.5 text-xs text-white/45"
+                        >
+                          {technology}
+                        </span>
+                      ))}
+                    </div>
+
+                    <button
+                      className="mt-8 text-sm font-medium text-white/70 transition hover:text-white"
+                      type="button"
                     >
-                      {technology}
-                    </span>
-                  ))}
+                      Case study coming soon →
+                    </button>
+                  </div>
                 </div>
               </article>
             ))}
@@ -145,107 +265,249 @@ export default function Home() {
         </div>
       </section>
 
-      {/* Capabilities */}
-      <section className="border-t border-white/10">
-        <div className="mx-auto max-w-6xl px-6 py-24">
-          <p className="text-sm uppercase tracking-[0.2em] text-white/40">
-            Capabilities
-          </p>
+      {/* APPROACH */}
+      <section id="approach" className="border-t border-white/10">
+        <div className="mx-auto max-w-6xl px-6 py-24 md:py-32">
+          <div className="grid gap-12 md:grid-cols-[1fr_2fr]">
+            <div>
+              <p className="text-xs uppercase tracking-[0.22em] text-white/35">
+                02 / Engineering approach
+              </p>
+            </div>
 
-          <div className="mt-10 grid gap-px overflow-hidden rounded-2xl border border-white/10 bg-white/10 sm:grid-cols-2 lg:grid-cols-3">
-            {capabilities.map((capability) => (
+            <div>
+              <h2 className="max-w-3xl text-3xl font-semibold leading-tight tracking-tight md:text-5xl">
+                I care about what happens behind the interface.
+              </h2>
+
+              <p className="mt-7 max-w-2xl text-base leading-8 text-white/55">
+                Applications are only one part of a system. I like
+                understanding the relationships between the interface, APIs,
+                data, infrastructure, security and the people operating the
+                technology.
+              </p>
+
+              <div className="mt-14 grid gap-px overflow-hidden rounded-2xl border border-white/10 bg-white/10 sm:grid-cols-2 lg:grid-cols-3">
+                {capabilities.map((capability) => (
+                  <div
+                    key={capability.number}
+                    className="bg-[#090909] p-7"
+                  >
+                    <span className="text-xs text-white/25">
+                      {capability.number}
+                    </span>
+
+                    <h3 className="mt-8 text-lg font-medium">
+                      {capability.title}
+                    </h3>
+
+                    <p className="mt-3 text-sm leading-6 text-white/45">
+                      {capability.description}
+                    </p>
+                  </div>
+                ))}
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* CLIENT WORK */}
+      <section className="border-t border-white/10">
+        <div className="mx-auto max-w-6xl px-6 py-24 md:py-32">
+          <div className="flex flex-col justify-between gap-6 md:flex-row md:items-end">
+            <div>
+              <p className="text-xs uppercase tracking-[0.22em] text-white/35">
+                03 / Selected client work
+              </p>
+
+              <h2 className="mt-4 text-3xl font-semibold tracking-tight md:text-5xl">
+                Technology in the real world.
+              </h2>
+            </div>
+
+            <p className="max-w-sm text-sm leading-6 text-white/45">
+              Websites and digital platforms designed and built for
+              organisations across different industries.
+            </p>
+          </div>
+
+          <div className="mt-14 grid border-l border-t border-white/10 sm:grid-cols-2 lg:grid-cols-3">
+            {clientProjects.map((project) => (
               <div
-                key={capability}
-                className="bg-[#090909] p-8 text-lg font-medium"
+                key={project.title}
+                className="border-b border-r border-white/10 p-7 transition hover:bg-white/[0.02]"
               >
-                {capability}
+                <p className="text-xs uppercase tracking-[0.18em] text-white/30">
+                  {project.category}
+                </p>
+
+                <h3 className="mt-10 text-lg font-medium">
+                  {project.title}
+                </h3>
+
+                <span className="mt-6 block text-sm text-white/30">
+                  View project →
+                </span>
               </div>
             ))}
           </div>
         </div>
       </section>
 
-      {/* About */}
-      <section id="about" className="border-t border-white/10">
-        <div className="mx-auto max-w-6xl px-6 py-24">
+      {/* EXPERIENCE */}
+      <section id="experience" className="border-t border-white/10">
+        <div className="mx-auto max-w-6xl px-6 py-24 md:py-32">
           <div className="grid gap-12 md:grid-cols-[1fr_2fr]">
-            <p className="text-sm uppercase tracking-[0.2em] text-white/40">
-              About
+            <p className="text-xs uppercase tracking-[0.22em] text-white/35">
+              04 / Experience
             </p>
 
-            <div>
-              <h2 className="text-3xl font-semibold leading-tight tracking-tight md:text-4xl">
-                I&apos;m interested in the systems behind the interface.
-              </h2>
+            <div className="border-l border-white/10 pl-6 md:pl-8">
+              <div className="flex flex-col justify-between gap-2 md:flex-row">
+                <h3 className="text-xl font-semibold">
+                  IT Operations & Digital Commerce Specialist
+                </h3>
 
-              <div className="mt-8 space-y-6 text-base leading-8 text-white/60">
-                <p>
-                  My work sits at the intersection of software development,
-                  infrastructure, networking and security.
-                </p>
+                <span className="text-sm text-white/35">
+                  2024 — Present
+                </span>
+              </div>
 
-                <p>
-                  I enjoy understanding how systems fit together — from the
-                  application layer and APIs to databases, infrastructure and
-                  the operational problems that appear in production.
-                </p>
+              <p className="mt-6 max-w-2xl text-base leading-8 text-white/55">
+                Working across technology operations, digital systems,
+                integrations and web platforms while developing deeper
+                expertise across software engineering, infrastructure,
+                networking and security.
+              </p>
+
+              <div className="mt-8 flex flex-wrap gap-2">
+                {[
+                  "Systems",
+                  "Digital Commerce",
+                  "Integrations",
+                  "Web Platforms",
+                  "Operations",
+                ].map((item) => (
+                  <span
+                    key={item}
+                    className="rounded-full border border-white/10 px-3 py-1.5 text-xs text-white/40"
+                  >
+                    {item}
+                  </span>
+                ))}
               </div>
             </div>
           </div>
         </div>
       </section>
 
-      {/* Experience */}
-      <section id="experience" className="border-t border-white/10">
-        <div className="mx-auto max-w-6xl px-6 py-24">
-          <p className="text-sm uppercase tracking-[0.2em] text-white/40">
-            Experience
-          </p>
+      {/* ABOUT */}
+      <section className="border-t border-white/10">
+        <div className="mx-auto max-w-6xl px-6 py-24 md:py-32">
+          <div className="grid gap-12 md:grid-cols-[1fr_2fr]">
+            <p className="text-xs uppercase tracking-[0.22em] text-white/35">
+              05 / About
+            </p>
 
-          <div className="mt-12 max-w-3xl">
-            <div className="border-l border-white/10 pl-6">
-              <p className="text-sm text-white/40">2024 — Present</p>
+            <div>
+              <h2 className="max-w-3xl text-3xl font-semibold leading-tight tracking-tight md:text-5xl">
+                A builder who likes understanding the whole system.
+              </h2>
 
-              <h3 className="mt-2 text-xl font-semibold">
-                IT Operations & Digital Commerce Specialist
-              </h3>
+              <div className="mt-8 max-w-2xl space-y-6 text-base leading-8 text-white/55">
+                <p>
+                  My background sits across software development, IT
+                  operations, digital commerce, networking and security.
+                </p>
 
-              <p className="mt-4 leading-7 text-white/60">
-                Working across technology operations, digital systems,
-                integrations and web platforms while continuing to build
-                deeper expertise in software engineering, infrastructure and
-                security.
-              </p>
+                <p>
+                  I&apos;ve worked on everything from business applications
+                  and APIs to e-commerce platforms and production websites.
+                  That breadth has made me particularly interested in the
+                  connections between software and the infrastructure it
+                  depends on.
+                </p>
+
+                <p>
+                  I&apos;m continuing to deepen that foundation through
+                  software engineering, cloud, networking and cybersecurity.
+                </p>
+              </div>
+
+              <div className="mt-10 flex flex-wrap gap-5 text-sm">
+                <a
+                  href="https://github.com/Muthaa"
+                  target="_blank"
+                  rel="noreferrer"
+                  className="text-white/60 underline underline-offset-4 transition hover:text-white"
+                >
+                  GitHub ↗
+                </a>
+
+                <a
+                  href="https://www.linkedin.com/in/philip-muthangya/"
+                  target="_blank"
+                  rel="noreferrer"
+                  className="text-white/60 underline underline-offset-4 transition hover:text-white"
+                >
+                  LinkedIn ↗
+                </a>
+              </div>
             </div>
           </div>
         </div>
       </section>
 
-      {/* Contact */}
+      {/* CONTACT */}
       <section id="contact" className="border-t border-white/10">
-        <div className="mx-auto max-w-6xl px-6 py-32">
-          <p className="text-sm uppercase tracking-[0.2em] text-white/40">
-            Contact
+        <div className="mx-auto max-w-6xl px-6 py-32 md:py-40">
+          <p className="text-xs uppercase tracking-[0.22em] text-white/35">
+            06 / Contact
           </p>
 
-          <h2 className="mt-6 max-w-3xl text-4xl font-semibold leading-tight tracking-tight md:text-6xl">
-            Have a problem worth solving?
+          <h2 className="mt-6 max-w-4xl text-4xl font-semibold leading-tight tracking-tight md:text-6xl">
+            Have a difficult technical problem?
           </h2>
+
+          <p className="mt-6 max-w-xl text-base leading-7 text-white/50">
+            I&apos;m open to software engineering, systems, cloud,
+            infrastructure and technology opportunities.
+          </p>
 
           <a
             href="mailto:philipmuthangya@gmail.com"
-            className="mt-10 inline-block text-lg text-white/60 underline underline-offset-8 transition hover:text-white"
+            className="mt-10 inline-block text-lg text-white underline underline-offset-8 transition hover:text-white/70"
           >
-            Let&apos;s talk →
+            philipmuthangya@gmail.com →
           </a>
         </div>
       </section>
 
-      {/* Footer */}
+      {/* FOOTER */}
       <footer className="border-t border-white/10">
-        <div className="mx-auto flex max-w-6xl flex-col gap-4 px-6 py-8 text-sm text-white/40 md:flex-row md:items-center md:justify-between">
+        <div className="mx-auto flex max-w-6xl flex-col gap-4 px-6 py-8 text-xs uppercase tracking-[0.12em] text-white/30 md:flex-row md:items-center md:justify-between">
           <p>© {new Date().getFullYear()} Philip Kyalo</p>
-          <p>Software · Systems · Security</p>
+
+          <div className="flex gap-5">
+            <a
+              href="https://github.com/Muthaa"
+              target="_blank"
+              rel="noreferrer"
+              className="transition hover:text-white"
+            >
+              GitHub
+            </a>
+
+            <a
+              href="https://www.linkedin.com/in/philip-muthangya/"
+              target="_blank"
+              rel="noreferrer"
+              className="transition hover:text-white"
+            >
+              LinkedIn
+            </a>
+          </div>
         </div>
       </footer>
     </main>
