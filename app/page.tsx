@@ -405,7 +405,7 @@ export default function Home() {
 
       {/* EXPERIENCE */}
       <section id="experience" className="border-t border-white/10 py-24 md:py-32">
-        <div className="mx-auto max-w-6xl grid gap-12 md:grid-cols-[0.8fr_1.2fr]">
+        <div className="mx-auto max-w-6xl px-6 md:px-8 grid gap-12 md:grid-cols-[0.8fr_1.2fr]">
           <div>
             <p className="text-xs font-medium uppercase tracking-[0.2em] text-white/40">
               Experience & Background
@@ -637,6 +637,6 @@ export default function Home() {
           </div>
         </div>
       </footer>
-    </main>
+    </main >
   );
 }
