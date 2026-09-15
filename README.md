@@ -1,36 +1,133 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Philip Kyalo — Personal Engineering Portfolio
 
-## Getting Started
+Personal portfolio and engineering profile for **Philip Kyalo**, a software engineer based in Nairobi, Kenya.
 
-First, run the development server:
+The site is designed to showcase software projects, professional engineering work, client work, technical capabilities, and experience across software development, APIs, digital commerce, infrastructure and security.
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+## Overview
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+This portfolio is built around a simple idea:
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+> Show how I think, what I've built, and the systems I've worked with.
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+Rather than focusing only on technologies and project screenshots, the portfolio highlights the engineering problems behind the work and experience building systems that operate in real-world environments.
 
-## Learn More
+## What You'll Find
 
-To learn more about Next.js, take a look at the following resources:
+### Engineering Work
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+Selected software projects covering areas such as:
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+- Mobile application development
+- Financial technology
+- APIs and integrations
+- Identity and access management
+- Business systems
+- Data and persistence
 
-## Deploy on Vercel
+### Engineering Approach
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+The portfolio highlights experience across:
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+- Software development
+- APIs & integrations
+- Data & persistence
+- Infrastructure
+- Security
+- Technical problem solving
+
+### Client Work
+
+Selected websites and digital platforms developed for real organisations and businesses, including e-commerce, fleet technology, healthcare and professional services.
+
+Where projects are publicly available, the portfolio links directly to the live site.
+
+### Experience & Background
+
+Professional experience spanning:
+
+- Software engineering
+- Flutter/mobile development
+- IT operations
+- Digital commerce
+- Infrastructure and networking
+- Systems support
+- Security and access management
+
+A downloadable résumé is also available from the portfolio.
+
+## Featured Projects
+
+### ExpTrail
+
+**FinTech · Mobile · Data**
+
+A personal finance application focused on transforming M-PESA transaction messages into structured financial data that can be stored, analysed and acted on.
+
+**Technologies:** Flutter, Dart, Riverpod, Drift
+
+### GreenHub
+
+**Mobile · E-commerce · APIs**
+
+A Flutter-based e-commerce application integrating product discovery, search, authentication, backend APIs and payments.
+
+**Technologies:** Flutter, APIs, Authentication, Payments
+
+### AsiriaIDP
+
+**Identity · API · Security**
+
+An Identity and Access Management platform focused on centralised authentication, authorisation and access control across applications.
+
+### AsiriaPOS
+
+**Business Systems · API**
+
+A point-of-sale system focused on sales, inventory, customer management and business reporting.
+
+## Technology
+
+The portfolio itself is built with:
+
+- **Next.js**
+- **TypeScript**
+- **Tailwind CSS**
+- **Vercel**
+- **GitHub**
+
+The projects represented on the site span a broader technology ecosystem including:
+
+- C#
+- .NET
+- Python
+- Java
+- JavaScript
+- Flutter / Dart
+- SQL
+- PostgreSQL
+- MySQL
+- MongoDB
+- REST APIs
+- Git
+- Docker
+- CI/CD
+- Linux
+- Cloud infrastructure
+- Networking
+- Web security
+
+## Project Structure
+
+```text
+.
+├── public/
+│   └── resume.pdf
+├── src/
+│   └── app/
+│       ├── page.tsx
+│       ├── layout.tsx
+│       └── globals.css
+├── package.json
+├── tsconfig.json
+└── README.md
