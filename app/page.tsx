@@ -1,4 +1,13 @@
-const engineeringProjects = [
+type EngineeringProject = {
+  number: string;
+  title: string;
+  category: string;
+  description: string;
+  stack: string[];
+  status: string;
+};
+
+const engineeringProjects: EngineeringProject[] = [
   {
     number: "01",
     title: "ExpTrail",
@@ -10,6 +19,15 @@ const engineeringProjects = [
   },
   {
     number: "02",
+    title: "GreenHub",
+    category: "MOBILE · E-COMMERCE · API",
+    description:
+      "A Flutter-based e-commerce application integrating product discovery, search, authentication, backend APIs and payments.",
+    stack: ["Flutter", "APIs", "Authentication", "Payments"],
+    status: "Professional project",
+  },
+  {
+    number: "03",
     title: "AsiriaIDP",
     category: "IDENTITY · API · SECURITY",
     description:
@@ -18,7 +36,7 @@ const engineeringProjects = [
     status: "Building",
   },
   {
-    number: "03",
+    number: "04",
     title: "AsiriaPOS",
     category: "BUSINESS SYSTEMS · API",
     description:
@@ -356,48 +374,127 @@ export default function Home() {
       </section>
 
       {/* EXPERIENCE */}
-      <section id="experience" className="border-t border-white/10">
-        <div className="mx-auto max-w-6xl px-6 py-24 md:py-32">
-          <div className="grid gap-12 md:grid-cols-[1fr_2fr]">
-            <p className="text-xs uppercase tracking-[0.22em] text-white/35">
-              04 / Experience
+      <section id="experience" className="border-t border-white/10 py-24 md:py-32">
+        <div className="grid gap-12 md:grid-cols-[0.8fr_1.2fr]">
+          <div>
+            <p className="text-xs font-medium uppercase tracking-[0.2em] text-white/40">
+              Experience & Background
             </p>
 
-            <div className="border-l border-white/10 pl-6 md:pl-8">
-              <div className="flex flex-col justify-between gap-2 md:flex-row">
-                <h3 className="text-xl font-semibold">
-                  IT Operations & Digital Commerce Specialist
-                </h3>
+            <h2 className="mt-5 max-w-md text-3xl font-semibold tracking-[-0.02em] text-white md:text-4xl">
+              Building across software and operations.
+            </h2>
+          </div>
 
-                <span className="text-sm text-white/35">
-                  2024 — Present
-                </span>
+          <div>
+            <p className="max-w-2xl text-base leading-8 text-white/60 md:text-lg">
+              My experience spans software development, mobile applications, APIs,
+              digital commerce and IT operations — from building business systems
+              and e-commerce platforms to supporting the infrastructure behind them.
+            </p>
+
+            <div className="mt-12 space-y-0 border-t border-white/10">
+              <div className="border-b border-white/10 py-7">
+                <div className="flex flex-col justify-between gap-2 sm:flex-row">
+                  <div>
+                    <h3 className="text-lg font-medium text-white">
+                      IT Operations & Digital Commerce Specialist
+                    </h3>
+                    <p className="mt-1 text-sm text-white/40">
+                      ETB TECH SOLUTIONS LTD
+                    </p>
+                  </div>
+                  <p className="text-sm text-white/40">2024 — Present</p>
+                </div>
+
+                <p className="mt-4 max-w-2xl text-sm leading-7 text-white/50">
+                  Working across digital infrastructure, e-commerce platforms,
+                  hosting, domains, analytics, SEO, security and technical
+                  operations.
+                </p>
               </div>
 
-              <p className="mt-6 max-w-2xl text-base leading-8 text-white/55">
-                Working across technology operations, digital systems,
-                integrations and web platforms while developing deeper
-                expertise across software engineering, infrastructure,
-                networking and security.
-              </p>
+              <div className="border-b border-white/10 py-7">
+                <div className="flex flex-col justify-between gap-2 sm:flex-row">
+                  <div>
+                    <h3 className="text-lg font-medium text-white">
+                      Flutter Developer
+                    </h3>
+                    <p className="mt-1 text-sm text-white/40">
+                      Solfa Solve & Flourish Africa
+                    </p>
+                  </div>
+                  <p className="text-sm text-white/40">2025 — 2026</p>
+                </div>
 
-              <div className="mt-8 flex flex-wrap gap-2">
-                {[
-                  "Systems",
-                  "Digital Commerce",
-                  "Integrations",
-                  "Web Platforms",
-                  "Operations",
-                ].map((item) => (
-                  <span
-                    key={item}
-                    className="rounded-full border border-white/10 px-3 py-1.5 text-xs text-white/40"
-                  >
-                    {item}
-                  </span>
-                ))}
+                <p className="mt-4 max-w-2xl text-sm leading-7 text-white/50">
+                  Developed mobile application components and integrated backend
+                  APIs for product discovery, search, authentication and payments.
+                </p>
+              </div>
+
+              <div className="border-b border-white/10 py-7">
+                <div className="flex flex-col justify-between gap-2 sm:flex-row">
+                  <div>
+                    <h3 className="text-lg font-medium text-white">
+                      Software Engineer
+                    </h3>
+                    <p className="mt-1 text-sm text-white/40">
+                      DigiSoft Consulting Services Ltd
+                    </p>
+                  </div>
+                  <p className="text-sm text-white/40">2023 — 2025</p>
+                </div>
+
+                <p className="mt-4 max-w-2xl text-sm leading-7 text-white/50">
+                  Built business software including POS applications, APIs,
+                  authentication and reporting systems for operational workflows.
+                </p>
+              </div>
+
+              <div className="py-7">
+                <div className="flex flex-col justify-between gap-2 sm:flex-row">
+                  <div>
+                    <h3 className="text-lg font-medium text-white">
+                      Software Developer
+                    </h3>
+                    <p className="mt-1 text-sm text-white/40">
+                      Smart Ryuga Company
+                    </p>
+                  </div>
+                  <p className="text-sm text-white/40">2023</p>
+                </div>
+
+                <p className="mt-4 max-w-2xl text-sm leading-7 text-white/50">
+                  Worked with data-intensive systems, SQL and NoSQL databases,
+                  application deployments and data connectivity across multiple
+                  system components.
+                </p>
               </div>
             </div>
+
+            <div className="mt-10 flex flex-wrap gap-3 text-xs uppercase tracking-[0.12em] text-white/40">
+              <span>Software</span>
+              <span>·</span>
+              <span>APIs</span>
+              <span>·</span>
+              <span>Mobile</span>
+              <span>·</span>
+              <span>Digital Commerce</span>
+              <span>·</span>
+              <span>Infrastructure</span>
+              <span>·</span>
+              <span>Security</span>
+            </div>
+
+            <a
+              href="/Philip Kyalo Resume.pdf"
+              download
+              className="mt-10 inline-flex items-center gap-3 border border-white/15 px-5 py-3 text-sm font-medium text-white transition hover:border-white/30 hover:bg-white/5"
+            >
+              Download résumé
+              <span aria-hidden="true">↗</span>
+            </a>
           </div>
         </div>
       </section>
