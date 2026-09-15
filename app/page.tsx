@@ -141,8 +141,8 @@ export default function Home() {
             Software · Systems · Security
           </p>
 
-          <h1 className="max-w-4xl text-5xl font-semibold leading-[1.02] tracking-[-0.04em] md:text-7xl lg:text-8xl">
-            I build software and systems that hold up in the real world.
+          <h1 className="max-w-4xl text-4xl font-semibold leading-[1.05] tracking-[-0.03em] sm:text-5xl md:text-6xl">
+            Software, systems, and the infrastructure behind them.
           </h1>
 
           <p className="mt-8 max-w-2xl text-lg leading-8 text-white/55 md:text-xl">
