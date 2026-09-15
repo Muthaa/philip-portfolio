@@ -1,6 +1,18 @@
 "use client";
+import QRCode from "qrcode";
+import { useEffect, useState } from "react";
 
 export default function DigitalCard() {
+    const [qrCode, setQrCode] = useState("");
+
+    useEffect(() => {
+        QRCode.toDataURL("https://philip-portfolio-psi.vercel.app/card", {
+            width: 220,
+            margin: 2,
+            errorCorrectionLevel: "H",
+        }).then(setQrCode);
+    }, []);
+
     const saveContact = () => {
         const vcard = `BEGIN:VCARD
 VERSION:3.0
@@ -129,6 +141,31 @@ END:VCARD`;
                             >
                                 GitHub ↗
                             </a>
+                        </div>
+                    </section>
+
+                    {/* QR CODE */}
+                    <section className="mt-12 border-t border-white/10 pt-8">
+                        <div className="flex items-center justify-between gap-6">
+                            <div>
+                                <p className="text-xs uppercase tracking-[0.18em] text-white/30">
+                                    Digital card
+                                </p>
+
+                                <p className="mt-3 max-w-[200px] text-sm leading-6 text-white/45">
+                                    Scan to view my contact details and portfolio.
+                                </p>
+                            </div>
+
+                            {qrCode && (
+                                <div className="shrink-0 rounded-xl bg-white p-3">
+                                    <img
+                                        src={qrCode}
+                                        alt="QR code linking to Philip Kyalo's digital card"
+                                        className="h-32 w-32"
+                                    />
+                                </div>
+                            )}
                         </div>
                     </section>
 
