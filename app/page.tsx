@@ -48,28 +48,43 @@ const engineeringProjects: EngineeringProject[] = [
 
 const clientProjects = [
   {
-    title: "Elite Tech Base",
+    name: "Elite Tech Base",
     category: "E-COMMERCE",
+    description:
+      "E-commerce platform supporting product discovery, customer accounts, cart management and M-Pesa payments.",
+    url: "https://elitetechh.com",
   },
   {
-    title: "Discreet Fleet",
+    name: "Discreet Fleet",
     category: "FLEET TECHNOLOGY",
+    description:
+      "Website redesign and digital platform work for a fleet tracking and management business.",
+    url: "https://discreetfleet.com",
   },
   {
-    title: "Kira Tech & Tacticals",
-    category: "COMMERCE",
+    name: "Kira Tech & Tacticals",
+    category: "E-COMMERCE",
+    description:
+      "E-commerce website built to present and sell a specialised technology and equipment catalogue online.",
+    url: "https://kiratechandtacticals.com",
   },
   {
-    title: "Smart Ryuga",
-    category: "WEB PLATFORM",
+    name: "Smart Ryuga",
+    category: "BUSINESS SYSTEMS",
+    description:
+      "Software development work involving data-intensive systems, databases and integrations across business operations.",
   },
   {
-    title: "Chanf Hospital",
+    name: "Chanf Hospital",
     category: "HEALTHCARE",
+    description:
+      "Digital platform work for a healthcare organisation, focused on presenting services and improving online accessibility.",
   },
   {
-    title: "Moderno Global Placements",
+    name: "Moderno Global Placements",
     category: "PROFESSIONAL SERVICES",
+    description:
+      "Professional services website designed to establish a stronger digital presence and improve access to client information.",
   },
 ];
 
@@ -295,7 +310,7 @@ export default function Home() {
 
             <div>
               <h2 className="max-w-3xl text-3xl font-semibold leading-tight tracking-tight md:text-5xl">
-                I care about what happens behind the interface.
+                I focus on what happens behind the interface.
               </h2>
 
               <p className="mt-7 max-w-2xl text-base leading-8 text-white/55">
@@ -353,7 +368,7 @@ export default function Home() {
           <div className="mt-14 grid border-l border-t border-white/10 sm:grid-cols-2 lg:grid-cols-3">
             {clientProjects.map((project) => (
               <div
-                key={project.title}
+                key={project.name}
                 className="border-b border-r border-white/10 p-7 transition hover:bg-white/[0.02]"
               >
                 <p className="text-xs uppercase tracking-[0.18em] text-white/30">
@@ -361,12 +376,27 @@ export default function Home() {
                 </p>
 
                 <h3 className="mt-10 text-lg font-medium">
-                  {project.title}
+                  {project.name}
                 </h3>
 
-                <span className="mt-6 block text-sm text-white/30">
+                <p className="text-xs mt-4 leading-6 text-white/45">
+                  {project.description}
+                </p>
+
+                {project.url && (
+                  <a
+                    href={project.url}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="mt-5 inline-flex items-center gap-2 text-sm text-white/60 transition hover:text-white"
+                  >
+                    Visit site
+                    <span aria-hidden="true">↗</span>
+                  </a>
+                )}
+                {/* <span className="mt-6 block text-sm text-white/30">
                   View project →
-                </span>
+                </span> */}
               </div>
             ))}
           </div>
