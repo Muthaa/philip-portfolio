@@ -47,7 +47,7 @@ END:VCARD`;
                     <div className="mb-12">
                         <a
                             href="/"
-                            className="text-xs uppercase tracking-[0.22em] text-white/35 transition hover:text-white"
+                            className="text-xs uppercase tracking-[0.22em] text-[#76fafc]/50 transition hover:text-white"
                         >
                             Philip Kyalo
                         </a>
@@ -55,7 +55,7 @@ END:VCARD`;
 
                     {/* Identity */}
                     <section>
-                        <p className="text-xs font-medium uppercase tracking-[0.25em] text-white/35">
+                        <p className="text-xs font-medium uppercase tracking-[0.25em] text-[#76fafc]/50">
                             Software · Systems · Infrastructure
                         </p>
 
@@ -112,14 +112,14 @@ END:VCARD`;
                         <div className="space-y-4 text-sm">
                             <a
                                 href="tel:+254797330046"
-                                className="block text-white/55 transition hover:text-white"
+                                className="block text-[#76fafc]/55 transition hover:text-white"
                             >
                                 +254 797 330 046
                             </a>
 
                             <a
                                 href="mailto:philipmuthangya@gmail.com"
-                                className="block text-white/55 transition hover:text-white"
+                                className="block text-[#76fafc]/55 transition hover:text-white"
                             >
                                 philipmuthangya@gmail.com
                             </a>
@@ -128,7 +128,7 @@ END:VCARD`;
                                 href="https://www.linkedin.com/in/philip-muthangya/"
                                 target="_blank"
                                 rel="noreferrer"
-                                className="block text-white/55 transition hover:text-white"
+                                className="block text-[#76fafc]/55 transition hover:text-white"
                             >
                                 LinkedIn ↗
                             </a>
@@ -137,7 +137,7 @@ END:VCARD`;
                                 href="https://github.com/Muthaa"
                                 target="_blank"
                                 rel="noreferrer"
-                                className="block text-white/55 transition hover:text-white"
+                                className="block text-[#76fafc]/55 transition hover:text-white"
                             >
                                 GitHub ↗
                             </a>
@@ -148,7 +148,7 @@ END:VCARD`;
                     <section className="mt-12 border-t border-white/10 pt-8">
                         <div className="flex items-center justify-between gap-6">
                             <div>
-                                <p className="text-xs uppercase tracking-[0.18em] text-white/30">
+                                <p className="text-xs uppercase tracking-[0.18em] text-[#76fafc]/50">
                                     Digital card
                                 </p>
 
