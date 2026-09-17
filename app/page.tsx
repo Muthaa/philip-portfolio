@@ -603,6 +603,13 @@ export default function Home() {
           </p>
 
           <a
+            href="/card"
+            className="mt-10 inline-block text-lg text-white underline underline-offset-8 transition hover:text-white/70"
+          >
+            View my Card →
+          </a>
+          <br></br>
+          <a
             href="mailto:philipmuthangya@gmail.com"
             className="mt-10 inline-block text-lg text-white underline underline-offset-8 transition hover:text-white/70"
           >
