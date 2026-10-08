@@ -40,9 +40,9 @@ const engineeringProjects: EngineeringProject[] = [
     title: "AsiriaPOS",
     category: "BUSINESS SYSTEMS · API",
     description:
-      "A point-of-sale platform designed around real business operations, including transactions, inventory, authentication and payment integrations.",
-    stack: ["C#", ".NET", "SQL Server", "APIs"],
-    status: "Project",
+      "A point-of-sale and business operations API covering inventory, sales, purchases and customer management, with token authentication and role-based permissions. A JavaScript/TypeScript dashboard is planned.",
+    stack: ["Python", "Django REST Framework", "MySQL", "REST APIs"],
+    status: "",
   },
 ];
 
@@ -263,9 +263,11 @@ export default function Home() {
                       {project.title}
                     </h3>
 
-                    <p className="mt-4 text-xs uppercase tracking-wider text-white/30">
-                      {project.status}
-                    </p>
+                    {project.status && (
+                      <p className="mt-4 text-xs uppercase tracking-wider text-white/30">
+                        {project.status}
+                      </p>
+                    )
                   </div>
 
                   <div>
