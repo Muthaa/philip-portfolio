@@ -267,7 +267,7 @@ export default function Home() {
                       <p className="mt-4 text-xs uppercase tracking-wider text-white/30">
                         {project.status}
                       </p>
-                    )
+                    )}
                   </div>
 
                   <div>
