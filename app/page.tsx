@@ -10,10 +10,10 @@ type EngineeringProject = {
 const engineeringProjects: EngineeringProject[] = [
   {
     number: "01",
-    title: "ExpTrail",
+    title: "InSlate",
     category: "FINTECH · MOBILE · DATA",
     description:
-      "A personal finance platform built around the problem of turning M-PESA transaction messages into structured financial data that can be stored, analysed and acted on.",
+      "A local-first personal finance application that turns M-PESA SMS into structured financial records, with transaction classification, import reconciliation and insights into spending and transfers.",
     stack: ["Flutter", "Dart", "Riverpod", "Drift"],
     status: "In development",
   },
