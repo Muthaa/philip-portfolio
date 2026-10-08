@@ -58,11 +58,11 @@ A downloadable résumé is also available from the portfolio.
 
 ## Featured Projects
 
-### ExpTrail
+### InSlate
 
 **FinTech · Mobile · Data**
 
-A personal finance application focused on transforming M-PESA transaction messages into structured financial data that can be stored, analysed and acted on.
+A local-first personal finance application that transforms M-PESA SMS into structured financial records, with transaction classification, import reconciliation and spending insights.
 
 **Technologies:** Flutter, Dart, Riverpod, Drift
 
